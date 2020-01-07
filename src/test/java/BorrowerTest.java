@@ -20,4 +20,12 @@ public class BorrowerTest {
     public void booksCollectionStartsEmpty() {
         assertEquals(0, borrower1.countBooks());
     }
+
+    @Test
+    public void canAddBookToBorrowedBooks() {
+        borrower1.addBook(book1);
+        assertEquals(1, borrower1.countBooks());
+    }
+
+
 }

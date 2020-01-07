@@ -24,4 +24,12 @@ public class Library {
         }
         return false;
     }
-}
+
+//    public Book removeBook(Book book) {
+//        Book returnedBook = null;
+//        for (Book bookEntry : this.books) {
+//            if (book.getTitle() == bookEntry.getTitle()) {
+//                returnedBook = this.books.remove()
+//            }
+//        }
+//    }
