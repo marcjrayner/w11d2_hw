@@ -15,7 +15,9 @@ public class Library {
     }
 
     public void addBook(Book book) {
-        if (!checkIfStockFull()) {this.books.add(book);}
+        if (!checkIfStockFull()) {
+            this.books.add(book);
+        }
     }
 
     public boolean checkIfStockFull() {
@@ -25,11 +27,7 @@ public class Library {
         return false;
     }
 
-//    public Book removeBook(Book book) {
-//        Book returnedBook = null;
-//        for (Book bookEntry : this.books) {
-//            if (book.getTitle() == bookEntry.getTitle()) {
-//                returnedBook = this.books.remove()
-//            }
-//        }
-//    }
+    public Book removeBook(Book book) {
+        return this.books.remove(this.books.indexOf(book));
+    }
+}

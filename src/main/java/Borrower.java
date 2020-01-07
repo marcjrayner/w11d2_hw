@@ -18,4 +18,8 @@ public class Borrower {
     }
 
 
+    public void borrow(Library library, Book book) {
+        Book bookToBorrow = library.removeBook(book);
+        borrowedBooks.add(bookToBorrow);
+    }
 }
