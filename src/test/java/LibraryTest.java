@@ -38,7 +38,14 @@ public class LibraryTest {
         assertEquals(true, myLibrary.checkIfStockFull());
     }
 
-
-
-
+    @Test
+    public void wontAddBookIfStockFull() {
+        myLibrary.addBook(book1);
+        myLibrary.addBook(book1);
+        myLibrary.addBook(book1);
+        myLibrary.addBook(book1);
+        myLibrary.addBook(book1);
+        myLibrary.addBook(book1);
+        assertEquals(3, myLibrary.countBooks());
+    }
 }

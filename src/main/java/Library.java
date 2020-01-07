@@ -15,7 +15,7 @@ public class Library {
     }
 
     public void addBook(Book book) {
-        this.books.add(book);
+        if (!checkIfStockFull()) {this.books.add(book);}
     }
 
     public boolean checkIfStockFull() {
